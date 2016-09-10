@@ -1,0 +1,89 @@
+<html>
+<head>
+
+
+
+
+<title>pruebas psicometricas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+alert("Bienvenido a este simulador de pruebas psicometricas con el perfil administrativo \n\nSeleccione las respuestas que crea correctas primero debera VUSALIZAR LA IMAGEN PARA PODER CONTESTAR EL TEST, teniendo en "+
+      ) 
+//-->
+
+var resp = new Array;
+var faite = new Array;
+var score = 0;
+
+resp[1] = "b";
+resp[2] = "a";
+resp[3] = "c";
+resp[4] = "c";
+resp[5] = "b";
+resp[6] = "a";
+resp[7] = "b";
+resp[8] = "b";
+resp[9] = "c";
+resp[10] = "a";
+
+function Engine(question, repose) 
+{
+   if (repose != resp[question])
+	 {
+             if (!faite[question])
+			        {faite[question] = -1;}
+                }
+        else {
+
+                if (!faite[question]) {
+                        faite[question] = -1;
+                        score++;
+                        alert("¡Correcto! Tu puntuación es : " + score );
+                        }
+
+                }
+}
+
+function Nivel () {
+      
+        if (score >= 9 && score < 10) {
+                alert(score + "/10 " + "Muy bien, prueba a superarlo");
+                }
+        if (score >= 7 && score < 8) {
+                alert(score + "/10 " + "Bien, pero puedes hacerlo mejor");
+                }
+        if (score >= 5 && score < 6) {
+                alert(score + "/10 " + "Aprobado pero no es suficiente. No te fíes");
+                }
+        if (score >= 3 && score < 4) {
+                alert(score + "/10 " + "Insuficiente. Has de estudiar más");
+                }
+        if (score < 2) {
+                alert("Su puntuación es: "+ score 
+				+"\nLa puntuación máxima que podía obtener es 10" 
+				+"\nTiene que reviazar nuevamente sus lecciones" 
+				+"\nSu porcentaje de aciertos es menos del 10%");
+                }
+}
+
+</script>
+<body background="azul.jpg">
+<center><p><td width="715" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="##FFFFFF"><b><h1><marquee>PRUEBAS PSICOMÉTRICAS</marquee></h1></b></font></td>
+</p><body bgcolor="#E0F8E0" text="#000000">
+<center><p><td width="715" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><h4>MEMORIA VISUAL</h4></b></font></td>
+</p><body bgcolor="#E0F8E0" text="#000000">
+<center><p><td width="715" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><h4>VUSALIZAR LA IMAGEN PARA PODER CONTESTAR EL TEST.....TOMA TU TIEMPO NECESARIO </center>
+<p><table width="500" border="0" align="70" cellpadding="0" cellspacing="0" bordercolor="#000000" height="2"></h4></b></font></td>
+ </p> <tr> <p>
+
+   <center> <td width="500" rowspan="2"><img src="observe2.jpg" width="500" height="500">
+<a href="memoriavisual2.html"> <input type="button" name="boton" value="Aceptar" /> </a> 
+</td>
+    
+  </p></tr></center>
+  
+
+</head>
+</body>
+</html>
